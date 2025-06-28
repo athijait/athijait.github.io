@@ -26,7 +26,7 @@
 
 .container_ita{
 	width: 957px;
-    height: auto;
+    min-height: 580px;
     margin: 0px auto 20px;
     padding: 0px 0px 10px 0px;
     float: left;
