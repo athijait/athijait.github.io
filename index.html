@@ -1,8 +1,107 @@
 <!DOCTYPE HTML>
 <html lang="th">
-	<?php
-		include 'template/headers.php';
-	?>
+	<head>
+		<title>KSICEC-ITA</title>
+		<meta charset = "UTF-8" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/main_pages.css" />
+		<link rel="stylesheet" href="css/slideshow.css" />
+		<link rel="shortcut icon" href="img/favicon16.png" type="image/x-icon"/>
+		<style>
+			footer .footer-contents ul.about-us li {
+				width: 50%;
+				float: left;
+				padding: 0px;
+				overflow: auto;
+			}
+		</style>
+		<script src="js/jquery.min.js" ></script> 
+		<script type="text/javascript">
+			
+			function openCity2(event,bt){
+				var option = bt;
+				var li = document.getElementsByTagName("button");
+				for(i=0;i<li.length;i++){
+				li[i].classList.remove("active");
+				}
+				
+				if(bt == "b1"){
+					//alert("b1");
+					document.getElementById("b1").style.display = "block";
+					document.getElementById("b2").style.display = "none";
+					document.getElementById("b3").style.display = "none";
+					document.getElementById("b4").style.display = "none";
+					document.getElementById("b5").style.display = "none";
+					document.getElementById("b6").style.display = "none";
+					document.getElementById("b7").style.display = "none";
+					document.getElementById("tab_b1").className += " active";
+				}else if(bt == "b2"){
+					//alert("b2");
+					document.getElementById("b1").style.display = "none";
+					document.getElementById("b2").style.display = "block";
+					document.getElementById("b3").style.display = "none";
+					document.getElementById("b4").style.display = "none";
+					document.getElementById("b5").style.display = "none";
+					document.getElementById("b6").style.display = "none";
+					document.getElementById("b7").style.display = "none";
+					document.getElementById("tab_b2").className += " active";
+				}else if(bt == "b3"){
+					//alert("b3");
+					document.getElementById("b1").style.display = "none";
+					document.getElementById("b2").style.display = "none";
+					document.getElementById("b3").style.display = "block";
+					document.getElementById("b4").style.display = "none";
+					document.getElementById("b5").style.display = "none";
+					document.getElementById("b6").style.display = "none";
+					document.getElementById("b7").style.display = "none";
+					document.getElementById("tab_b3").className += " active";
+				}else if(bt == "b4"){
+					//alert("b4");
+					document.getElementById("b1").style.display = "none";
+					document.getElementById("b2").style.display = "none";
+					document.getElementById("b3").style.display = "none";
+					document.getElementById("b4").style.display = "block";
+					document.getElementById("b5").style.display = "none";
+					document.getElementById("b6").style.display = "none";
+					document.getElementById("b7").style.display = "none";
+					document.getElementById("tab_b4").className += " active";
+				}else if(bt == "b5"){
+					//alert("b5");
+					document.getElementById("b1").style.display = "none";
+					document.getElementById("b2").style.display = "none";
+					document.getElementById("b3").style.display = "none";
+					document.getElementById("b4").style.display = "none";
+					document.getElementById("b5").style.display = "block";
+					document.getElementById("b6").style.display = "none";
+					document.getElementById("b7").style.display = "none";
+					document.getElementById("tab_b5").className += " active";
+				}else if(bt == "b6"){
+					//alert("b6");
+					document.getElementById("b1").style.display = "none";
+					document.getElementById("b2").style.display = "none";
+					document.getElementById("b3").style.display = "none";
+					document.getElementById("b4").style.display = "none";
+					document.getElementById("b5").style.display = "none";
+					document.getElementById("b6").style.display = "block";
+					document.getElementById("b7").style.display = "none";
+					document.getElementById("tab_b6").className += " active";
+				}else if(bt == "b7"){
+					//alert("b7");
+					document.getElementById("b1").style.display = "none";
+					document.getElementById("b2").style.display = "none";
+					document.getElementById("b3").style.display = "none";
+					document.getElementById("b4").style.display = "none";
+					document.getElementById("b5").style.display = "none";
+					document.getElementById("b6").style.display = "none";
+					document.getElementById("b7").style.display = "block";
+					document.getElementById("tab_b7").className += " active";
+				}
+				
+			}
+		</script>
+	</head>
+
 	
 	<body class="home page-template-default page page-id-5372  page- section-products">
 		<div class="container">
@@ -10,9 +109,18 @@
 				<div class="head_banner">
 					<a href="https://www.ksicec.ac.th/" target="_blank"><img src="img/ita_header.jpg" class="img-fluid" alt="ita image"></a>
 				</div>
-				<?php
-					include 'template/nav.php';
-				?>
+
+				<!--######################## nav ###########################-->
+				<nav id="nav">
+					<ul id="menu-nav-bar" class="menu">
+					
+						<li id="menu-item-8314" class="close-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-8314"><a href="#">  </a></li>
+						<li id="menu-item-6902" class="white menu-item menu-item-type-post_type menu-item-object-page menu-item-6902"><a href="">ITA ปีงบประมาณ 2568</a></li>
+						
+					</ul>
+				</nav>
+				<!--###################### end nav #########################-->
+				
 			</header> <!-- end: header -->
 		
 		
@@ -571,14 +679,50 @@
 							
 					</div>
 				
-			</div> <!-- end: main -->
+			</div> <!-- end: class main   -->
 			
-			<?php
-				include 'template/footer.php';
-			?>
+			<!-- #################  footer ####################-->
+
+			<div style="clear: both;"></div>
+			<footer id="footer">
+				<div class="footer-contents">
+					<ul class="about-us menu">
+						<li>
+							<h2><b>วิทยาลัยการอาชีพกาฬสินธุ์</b></h2>
+							<h2 style="clear: both; margin-top: -12px;"><b>Kalasin Industrial and Community Education College </b></h2>
+							<ul id="menu-about-us" class="menu">
+								<li id="menu-item-6888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6888">เลขที่ 12 ถนนสนามบิน   ตำบลกาฬสินธุ์  อำเภอเมือง  จังหวัดกาฬสินธุ์ 46000</li>
+								<li id="menu-item-23728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23728">โทรศัพท์ : 043 812 011</li>
+								<li id="menu-item-23729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23729">Fax : 043 812 011</li>
+								<li id="menu-item-23730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23730">อีเมล์ (Email): admin@ksicec.ac.th</li>
+								<li id="menu-item-32260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32260"><a href="https://www.facebook.com/p/งานประชาสัมพันธ์-วิทยาลัยการอาชีพกาฬสินธุ์-PrKSICEC-100093706390075/" target="_blank" style="color:#000">facebook: https://www.facebook.com/งานประชาสัมพันธ์-วิทยาลัยการอาชีพกาฬสินธุ์</a></li>
+							</ul>            
+						</li>
+						
+						<li style="padding-left: 40px;width: 330px; margin-left: 40px;">
+							<h2><b>Webmaster</b></h2>
+							<ul id="menu-support" class="menu"><li id="menu-item-23731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23731">งานศูนย์ข้อมูลและสารสนเทศ วิทยาลัยการอาชีพกาฬสินธุ์</li>
+								<li id="menu-item-23732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23732">Email : admin@ksicec.ac.th</li>
+								<li id="menu-item-23733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23733">โทรศัพท์ : 043 812 011</li>
+								
+							</ul>               
+						</li>
+						
+						
+					</ul>
+
+					<footer>
+						<div style="display:none;" class="info">Mr.Athijait Tiwasing<br />Create June 2025</div>
+
+						<ul class="site-links menu">
+							<li>.</li>
+							<li>.</li>
+						</ul>
+					</footer>
+				</div>
+			</footer>
 		
 		</div> <!-- end: container -->
-		
 		
 	</body>
 </html>
