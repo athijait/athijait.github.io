@@ -28,7 +28,7 @@
 	width: 957px;
     height: auto;
     margin: 0px auto 20px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
     float: left;
 	border: 1px solid gray;
     border-radius: 4px;
@@ -60,6 +60,7 @@
     width: 23%;
     height: 490px;
 	position: relative;
+    margin-bottom: 20px;
 }
 
 .tab button:hover{
