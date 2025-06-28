@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'sukhumvit_setbold';
+    src: url('../fontFace/sukhumvitset-bold-webfont.woff2') format('woff2'),
+         url('../fontFace/sukhumvitset-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit_setlight';
+    src: url('../fontFace/sukhumvitset-light-webfont.woff2') format('woff2'),
+         url('../fontFace/sukhumvitset-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit_setmedium';
+    src: url('../fontFace/sukhumvitset-medium-webfont.woff2') format('woff2'),
+         url('../fontFace/sukhumvitset-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit_setsemi_bold';
+    src: url('../fontFace/sukhumvitset-semibold-webfont.woff2') format('woff2'),
+         url('../fontFace/sukhumvitset-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit_setthin';
+    src: url('../fontFace/sukhumvitset-thin-webfont.woff2') format('woff2'),
+         url('../fontFace/sukhumvitset-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-size: 13px;
+    color: #333333;
+    font-family: 'sukhumvit_setlight', tahoma, arial;
+}
+a:link {color: #c61931; text-decoration: none;}
+a:visited {color: #7e0b1b;}
+a:hover {text-decoration: underline;}
+
+.clear {
+    clear: both;
+}
+fieldset{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+legend {
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+#header {
+    background: url(../images2/header-bg.gif) repeat-x;
+}
+#header #header-inner #top-right {
+    
+}
+#header #header-inner {
+    width: 950px;
+    height: 120px;
+    margin: 0 auto;
+}
+#header h1 {
+    float: left;
+    margin-top: 45px;
+}
+#header h1 a {
+    background: url(../images2/scg_w140.png) -2px -1px no-repeat;
+    width: 141px;
+    height: 53px;
+    display: block;
+    text-indent: -10000px;
+}
+#top-right form {
+    width: 205px;
+    margin: 0px auto;
+    height: 22px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.defaultTextActive{ color:#777777; }
+#serach_bt{
+	margin-top: 1px;
+    display: block;
+    float: right;
+	
+}
+#txtSearch {
+	width: 160px;
+}
+
+#Main_box{
+	margin-top: 100px;
+}
+
+#article h1,#article h2{
+	margin: 10px auto;
+    display: table;
+	
+}
+#article table{
+	margin: auto;
+}
+table .f1{
+	background-color: rgb(249, 249, 249);
+}
+table .f2{
+	background-color: rgb(249, 249, 249);
+}
+.backgroundRed{ background-color:red; color:#fff;}
+
+table th, table td{
+	padding: 2px 10px 2px;
+	
+}
+form #txtAlert{
+	display: block;
+    float: left;
+    color: red;
+	
+}
+
+#article .rowResult{
+	display: block;
+    margin: 7px auto;
+    width: 200px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* ################## lightbox ##################### */
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /* padding-top: 13%;  */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  /* position: relative; */
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 400px;
+  max-width: 1200px;
+  
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+.close {
+	color: gray;
+	position: absolute;
+	top: -5px;
+	right: 10px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mySlides {
+	display: none;
+    border: 1px solid;
+    width: 400px;
+    height: 350px;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+  user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ################## End lightbox ##################### */
+
+

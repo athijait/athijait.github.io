@@ -1,0 +1,129 @@
+.main_page_content {
+    border: 1px solid;
+	border-color:#858279;
+	width:700px;
+	float:left;
+	margin-right:5px;
+}
+.unit_list{
+	font-size: 14px;
+    line-height: 20px;
+}
+.unit_list ul{
+	list-style-type: square;
+}
+
+.unit_list h3{
+	font-size: 14px;
+	line-height: 14px;
+    margin: 0px;
+    font-weight: bold;
+}
+.list_all{
+	list-style-type: none;
+	
+}
+
+.container_ita{
+	width: 957px;
+    height: auto;
+    margin: 0px auto 20px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+	border: 1px solid gray;
+    border-radius: 4px;
+}
+
+
+.panel-heading {
+    padding: 5px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+	height: 35px;
+	width: 928px;
+}
+
+.container_ita .panel-heading {
+    color: #fff;
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.panel-body {
+    padding: 15px;
+}
+.tab {
+    float: left;
+    border: none;
+    background-color: #f0f0f0;
+    width: 23%;
+    height: 490px;
+	position: relative;
+}
+
+.tab button:hover{
+	background-color: #f0f0f0;
+    color: #000000;
+}
+
+.tab button.active {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.tab button {
+    display: block;
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 12px 6px;
+    width: 213px;
+    border: 2px #000000;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #f0f0f0;
+    width: 76%;
+    border-left: none;
+    height: auto;
+	position: relative;
+}
+table {
+    border-collapse: collapse;
+    width: 98%;
+}
+
+th {
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+td {
+    padding: 4px;
+    text-align: bottom;
+    border-bottom: 1px solid #ddd;
+	font-size: 13px;
+}
+
+
+
+
